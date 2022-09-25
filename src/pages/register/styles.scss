@@ -1,4 +1,102 @@
+@import "../../styles/global.style.scss";
+
 .registerContainer{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .description{
+        margin: size(22) size(44);
+        text-align: start;
+
+        .title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+            letter-spacing: -0.03em;
+            color: #1C1C1C;
+        }
+        .subtitle{
+            margin: size(15) 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #3D3D3D;
+        }
+    }
+    .formContainer{
+        section{
+            width: size(334);
+            height: size(76);
+            margin: size(20) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            label{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 137%;
+                color: #3D3D3D;
+                margin: 0 0 0 size(23);
+            }
+            input{
+                margin: size(10) 0 0 0;
+                background: #FFFFFF;
+                border: 1px solid #DFE2E6;
+                border-radius: 15px;
+                height: size(50);
+                width: 100%;
+                padding: size(23);
+                outline: none;
+
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 137%;
+                    color: #AAACAE;
+                }
+            }
+        }
+    }
+        .buttons {
+            margin: size(124) 0 0 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: size(125);
+            align-items: center;
+            justify-content: space-between;
+    
+            button {
+                border-radius: size(20);
+                width: size(335);
+                height: size(51);
+                border: none;
+                outline: none;
+            }
+    
+            .createBtn {
+                background: linear-gradient(108.73deg, #F9881F 23.73%, #FF774C 79.34%);
+                box-shadow: 0 size(10) size(30) rgba(202, 66, 17, 0.1);
+                font-weight: 700;
+                font-size: size(14);
+                line-height: 152.3%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: #FFFFFF;
+            }
+    
+            .loginBtn {
+                filter: drop-shadow(0 size(10) size(30) rgba(202, 66, 17, 0.1));
+                font-weight: 700;
+                font-size: size(16);
+                line-height: 150%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: #FE554A;
+            }
+        }
 }

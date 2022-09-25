@@ -1,0 +1,21 @@
+@import "../../styles/global.style.scss";
+
+.header {
+    width: 100%;
+    padding: size(28) 0;
+    position: relative;
+
+    .logo {
+        width: size(34);
+        height: size(24);
+    }
+
+    .skipBtn {
+        position: absolute;
+        font-weight: 700;
+        font-size: size(16);
+        top: 50%;
+        transform: translateY(-50%);
+        right: size(30);
+    }
+}
