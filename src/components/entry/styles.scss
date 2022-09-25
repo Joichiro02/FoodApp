@@ -1,0 +1,119 @@
+.logoContainer,
+.entryContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    img{
+        height: 72px;
+        width: 105px;
+    }
+}
+.entryContainer{
+    flex-direction: column;
+    justify-content: flex-start ;
+    
+    .header{
+        width: 100%;
+        padding: 28px 0;
+        position: relative;
+
+        .logo{
+            width: 34px;
+            height: 24px;
+        }
+
+        .skipBtn{
+            position: absolute;
+            font-weight: 700;
+            font-size: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+        }
+    }
+    .description{
+        padding: 11px 48px;
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .sliderImagesContainer{
+        width: 100%;
+        height: 255px;
+        overflow: hidden;
+        margin: 46px 0;
+        .sliderImages{
+            overflow-y: hidden;
+            height: 255px;
+            width: 300vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+    
+            img{
+                width: 338px;
+                height: 100%;
+                background-size: contain;
+            }
+        }
+    }
+    .pagination{
+        height: 10px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .page{
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: #C4C4C4;
+        }
+        .active{
+            background-color: #0B735F;
+        }
+    }
+    .buttons{
+        margin: 57px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 125px;
+        align-items: center;
+        justify-content: space-between;
+
+        button{
+            border-radius: 20px;
+            width: 335px;
+            height: 51px;
+            border: none;
+            outline: none;
+        }
+        
+        .createBtn{
+            background: linear-gradient(108.73deg, #F9881F 23.73%, #FF774C 79.34%);
+            box-shadow: 0px 10px 30px rgba(202, 66, 17, 0.1);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 152.3%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+
+        .loginBtn{
+            filter: drop-shadow(0px 10px 30px rgba(202, 66, 17, 0.1));
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FE554A;
+        }
+    }
+}
