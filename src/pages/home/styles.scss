@@ -179,5 +179,55 @@
         bottom: 0;
         width: 100%;
         height: size(115);
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            background-color: #FFFFFF;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            border-top-left-radius: size(20);
+            border-top-right-radius: size(20);
+        }
+
+        .footerContent{
+            position: relative;
+            width: size(296);
+            height: size(69);
+            margin: size(10) auto size(35);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            z-index: 22;
+            .homeIcon,
+            .heartIcon,
+            .notificationIcon,
+            .cartIcon{
+                width: size(24);
+                height: size(24);
+                background-size: contain;
+            }
+            .searchBody{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: size(60);
+                height: size(60);
+                background: linear-gradient(108.73deg, #F9881F 23.73%, #FF774C 79.34%);
+                border: size(1) solid #AAACAE;
+                box-shadow: 0 size(8) size(15) rgba(150, 110, 86, 0.2);
+                border-radius: 50%;
+                .searchIcon{
+                    width: size(18);
+                    height: size(18);
+                    background-size: contain;
+                }
+            }
+        }
     }
 }

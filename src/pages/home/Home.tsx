@@ -1,5 +1,5 @@
 import HeaderNav2 from "../../components/headerNav2/HeaderNav2";
-import {food1, food2, food3, food4, burger, star, heart} from "../../assets/images";
+import {food1, food2, food3, food4, burger, star, heart, cart, heartIcon, home, notification, search} from "../../assets/images";
 import "./styles.scss"
 
 const imageArr = [
@@ -80,7 +80,17 @@ const Home = () => {
                     </section>
                 </div>
             </div>
-            <footer className="footerNav"></footer>
+            <footer className="footerNav">
+                <div className="footerContent">
+                    <img className="homeIcon" src={home} alt="" />
+                    <img className="heartIcon" src={heartIcon} alt="" />
+                    <span className="searchBody">
+                        <img className="searchIcon" src={search} alt="" />
+                    </span>
+                    <img className="notificationIcon" src={notification} alt="" />
+                    <img className="cartIcon" src={cart} alt="" />
+                </div>
+            </footer>
         </div>
     )
 }
