@@ -27,4 +27,68 @@
             border-radius: 20px;
         }
     }
+    .countContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: size(50);
+        width: size(100);
+        background: linear-gradient(108.73deg, #F9881F 23.73%, #FF774C 79.34%);
+        border-radius: size(30);
+        font-weight: 700;
+        font-size: size(14);
+        line-height: 152.3%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: size(35) 0;
+    }
+    .titleContent{
+        height: size(59);
+        width: size(258);
+        margin: 0 auto;
+
+        .title{
+            font-weight: 700;
+            font-size: size(24);
+            line-height: size(31);
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #3D3D3D;
+        }
+    }
+    .descriptionContent{
+        height: size(84);
+        width: size(319);
+        font-weight: 400;
+        font-size: size(14);
+        line-height: 150%;
+        color: #3D3D3D;
+        text-align: left;
+        margin: size(36) 0 0;
+
+        .more{
+            font-weight: 400;
+            font-size: size(14);
+            line-height: 150%;
+            color: #FE554A;
+            padding: 0 0 0 size(8);
+        }
+    }
+    .toppingsContent{
+        height: size(98);
+        width: 100%;
+        margin: size(28) 0;
+        padding: 0 size(21);
+        
+        .title{
+            font-weight: 500;
+            font-size: size(16);
+            line-height: size(21);
+            letter-spacing: -0.03em;
+            color: #3D3D3D;
+            text-align: left;
+        }
+
+    }
 }
